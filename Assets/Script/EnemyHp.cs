@@ -1,42 +1,42 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-
-public class PlayerHealth : MonoBehaviour
+public class EnemyHp : MonoBehaviour
 {
-    public Image hpBar;
-    public TextMeshProUGUI hpText;
-
-    public float maxHealth = 100f;
+    
+    public float maxHealth = 50f;
     private float currentHealth;
-
+    public Image fillImage;
+    public TextMeshProUGUI hpText;
+    // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         UpdateUI();
     }
 
+
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-        Debug.Log("Nhan damage!");
         UpdateUI();
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
-        
     }
-
     void UpdateUI()
     {
-        hpBar.fillAmount = currentHealth / maxHealth;
+        float fillAmount = currentHealth / maxHealth;
+        fillImage.fillAmount = fillAmount;
         hpText.text = Mathf.Ceil(currentHealth).ToString() + "/" + Mathf.Ceil(maxHealth);
     }
-    void Die()
+
+    protected virtual void Die()
     {
-        Debug.Log("Player da chet");
         Destroy(gameObject);
     }
 }

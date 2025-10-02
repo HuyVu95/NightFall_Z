@@ -2,16 +2,16 @@
 
 public class Bullet_P : MonoBehaviour
 {
-    public float speed = 10f;         // Tốc độ bay
-    public float damage = 50f;        // Sát thương
-    public float lifetime = 2f;       // Thời gian tồn tại
+    public float speed = 10f;         
+    public float damage = 50f;        
+    public float lifetime = 2f;       
 
     private Rigidbody2D rb;
 
     public void Initialize(Vector2 direction)
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = direction * speed; // speed là tốc độ cố định, ví dụ: 10f
+        rb.velocity = direction * speed; 
         Destroy(gameObject, lifetime);
         Debug.Log("Vận tốc đạn: " + rb.velocity.magnitude);
     }
@@ -21,16 +21,16 @@ public class Bullet_P : MonoBehaviour
 
         Debug.Log("Va chạm với: " + other.name);
 
-        // Kiểm tra xem có phải là Enemy không
+        
         Enemy enemy = other.GetComponent<Enemy>();
         if (enemy != null)
         {
-            enemy.TakeDamage(damage); // Gây sát thương
-            OnHitEnemy(enemy); // Gọi hàm kiểm tra trúng
+            enemy.TakeDamage(damage); 
+            OnHitEnemy(enemy); 
             
         }
         Destroy(gameObject);
-        // Hủy đạn sau va chạm
+        
     }
     void OnHitEnemy(Enemy enemy)
     {
