@@ -28,10 +28,10 @@ public class SpawnManager : MonoBehaviour
         }
         Debug.Log($"Wave {wave}, tổng zombie cần spawn = {totalZombieSpawn}");
         // Spawn zombie chia đều cho các điểm
-        SpawnOutsideMap(totalZombieSpawn);
+        SpawnOutsideMap(totalZombieSpawn, wave);
     }
 
-    public void SpawnOutsideMap(int totalZombieSpawn)
+    public void SpawnOutsideMap(int totalZombieSpawn, int wave)
     {
         int points = spawnPointsOutsideMap.Count;
         int baseCount = totalZombieSpawn / points;
@@ -44,7 +44,9 @@ public class SpawnManager : MonoBehaviour
             int spawnCount = baseCount + (i < remainder ? 1 : 0); // chia đều + dư
             for (int j = 0; j < spawnCount; j++)
             {
-                Vector3 offset = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
+                float spread = Mathf.Clamp(wave * 0.5f, 1f, 3f);
+                Vector3 offset = new Vector3(Random.Range(-spread, spread), Random.Range(-spread, spread), 0f);
+
                 Vector3 spawnPos = spawnPointsOutsideMap[i].position + offset;
                 Instantiate(EnemyPrefab, spawnPos, Quaternion.identity);
                 totalSpawned++;

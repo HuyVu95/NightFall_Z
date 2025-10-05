@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         currentState = State.Wave;
         waveActive = true;
         timer = 15f;
-        Enemy.AliveCount = 0;
+        
         Debug.Log("Wave " + currentWave + " bat dau!");
         spawnManager.SpawnWave(currentWave);
 

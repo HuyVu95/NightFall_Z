@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Scripting.APIUpdating;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,7 +20,18 @@ public class PlayerController : MonoBehaviour
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput.Normalize();
-        if (moveInput.x > 0 && transform.localScale.x < 0 || moveInput.x < 0 && transform.localScale.x > 0)
+
+        FlipTowardsMouse();
+    }
+    void FlipTowardsMouse()
+    {
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 playerPos = transform.position;
+        if (mouseWorldPos.x < playerPos.x && transform.localScale.x > 0)
+        {
+            Flip();
+        }
+        else if (mouseWorldPos.x > playerPos.x && transform.localScale.x < 0)
         {
             Flip();
         }
@@ -31,6 +41,7 @@ public class PlayerController : MonoBehaviour
         facingDirection *= -1;
         transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
+
     void FixedUpdate()
     {
         rb.velocity = moveInput * speed;

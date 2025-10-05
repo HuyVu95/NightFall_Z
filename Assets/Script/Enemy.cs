@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour
     public float damage = 10f;
 
     private Health healthSystem;
-    public static int AliveCount = 0;
+    public static int AliveCount;
     void Awake()
     {
         // Lấy HealthSystem gắn trên Enemy
@@ -39,7 +39,8 @@ public class Enemy : MonoBehaviour
 
     void OnDestroy()
     {
-        AliveCount--;
+        AliveCount = Mathf.Max(AliveCount - 1, 0);
+
         Debug.Log($"Zombie bị diệt. Hiện tại còn {AliveCount} zombie sống.");
 
         // Nếu hết zombie thì báo cho GameManager
