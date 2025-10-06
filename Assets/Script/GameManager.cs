@@ -69,8 +69,8 @@ public class GameManager : MonoBehaviour
     {
         currentState = State.Wave;
         waveActive = true;
-        timer = 15f;
-        
+        timer = 10f;
+
         Debug.Log("Wave " + currentWave + " bat dau!");
         spawnManager.SpawnWave(currentWave);
 
@@ -103,13 +103,21 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+    void LateUpdate()
+    {
+        int actualZombieCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        if (actualZombieCount != Enemy.AliveCount)
+        {
+            Debug.LogWarning($"Lệch số lượng zombie! AliveCount = {Enemy.AliveCount}, thực tế = {actualZombieCount}");
         }
     }
 
