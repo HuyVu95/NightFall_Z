@@ -19,7 +19,7 @@ public class SpawnManager : MonoBehaviour
         }
 
         // Tính tổng số zombie cần spawn
-        int totalZombieSpawn = 10 + (wave - 1);
+        int totalZombieSpawn = 1 + (wave - 1); //số lượng zombie spawn
 
         // Spawn boss nếu wave đặc biệt
         if (wave == 5 || wave == 10)

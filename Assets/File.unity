@@ -905,7 +905,7 @@ MonoBehaviour:
   spawnManager: {fileID: 1854206767}
   currentWave: 1
   preWaveTime: 5
-  postWaveTime: 15
+  postWaveTime: 5
   waveActive: 0
   countdownText: {fileID: 1662123450}
 --- !u!4 &812013754

@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
     public SpawnManager spawnManager;
     [Header("Wave Settings")]
     public int currentWave = 1;
-    public float preWaveTime = 30f;
-    public float postWaveTime = 30f;
+    public float preWaveTime = 0.1f;
+    public float postWaveTime = 0.1f;
     public bool waveActive = false;
 
     [Header("UI")]
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
                 countdownText.text = "Wave " + currentWave + " dang dien ra!";
                 break;
             case State.PostWave:
-                countdownText.text = "Chuan bi wave tiep theo: " + Mathf.Ceil(timer) + "s";
+                countdownText.text = "Wave tiep theo: " + Mathf.Ceil(timer) + "s";
                 break;
         }
     }

@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "D:\\Git\\NightFall_Z\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|D:\\Git\\NightFall_Z\\assets\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|d:\\git\\nightfall_z\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|D:\\Git\\NightFall_Z\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|D:\\Git\\NightFall_Z\\assets\\script\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|d:\\git\\nightfall_z\\assets\\script\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|D:\\Git\\NightFall_Z\\assets\\script\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|D:\\Git\\NightFall_Z\\assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|D:\\Git\\NightFall_Z\\assets\\script\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|D:\\Git\\NightFall_Z\\assets\\script\\bullet_p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\bullet_p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|D:\\Git\\NightFall_Z\\assets\\script\\enemyfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\enemyfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|d:\\git\\nightfall_z\\assets\\script\\bossbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\bossbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|D:\\Git\\NightFall_Z\\assets\\script\\p_shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\p_shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|D:\\Git\\NightFall_Z\\assets\\script\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E369F327-B5D9-D655-67A3-ADA2D1761475}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,120 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Health.cs",
+              "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Health.cs",
+              "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\Health.cs",
+              "RelativeToolTip": "Assets\\Script\\Health.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:39:52.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BossBehavior.cs",
+              "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\BossBehavior.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\BossBehavior.cs",
+              "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\BossBehavior.cs",
+              "RelativeToolTip": "Assets\\Script\\BossBehavior.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:07:30.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "SpawnManager.cs",
               "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\SpawnManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\SpawnManager.cs",
               "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\SpawnManager.cs",
               "RelativeToolTip": "Assets\\Script\\SpawnManager.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-03T17:44:56.323Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\GameManager.cs",
               "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\GameManager.cs",
               "RelativeToolTip": "Assets\\Script\\GameManager.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAiwHUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwD4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-03T17:32:19.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerHealth.cs",
-              "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\PlayerHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\PlayerHealth.cs",
-              "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\PlayerHealth.cs",
-              "RelativeToolTip": "Assets\\Script\\PlayerHealth.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T11:37:18.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EnemyFollow.cs",
-              "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\EnemyFollow.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\EnemyFollow.cs",
-              "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\EnemyFollow.cs",
-              "RelativeToolTip": "Assets\\Script\\EnemyFollow.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T11:36:14.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "P_shoot.cs",
               "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\P_shoot.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\P_shoot.cs",
               "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\P_shoot.cs",
               "RelativeToolTip": "Assets\\Script\\P_shoot.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T17:29:21.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Enemy.cs",
-              "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Script\\Enemy.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAiwCMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T17:22:08.18Z",
+              "WhenOpened": "2025-09-28T17:29:21.727Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Bullet_P.cs",
-              "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\Bullet_P.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Bullet_P.cs",
-              "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\Bullet_P.cs",
-              "RelativeToolTip": "Assets\\Script\\Bullet_P.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T03:30:36.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\PlayerController.cs",
-              "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Script\\PlayerController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwDAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T09:27:45.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EnemySpawn.cs",
-              "DocumentMoniker": "D:\\Git\\NightFall_Z\\Assets\\Script\\EnemySpawn.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\EnemySpawn.cs",
-              "ToolTip": "D:\\Git\\NightFall_Z\\Assets\\Script\\EnemySpawn.cs",
-              "RelativeToolTip": "Assets\\Script\\EnemySpawn.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAvwAcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T05:20:15.826Z"
             }
           ]
         }
