@@ -4,7 +4,7 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewCharacterClass", menuName = "Character/Class")]
 
-public class CharacterClassData : MonoBehaviour
+public class CharacterClassData : ScriptableObject
 {
     public string className;
     public Sprite classIcon;

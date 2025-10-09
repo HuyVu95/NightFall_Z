@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public float maxHP = 100f;
     public CharacterClassData characterClass;
     private float currentHP;
     private float currentAmmo;
+    public float maxAmmo = 100f;
+
 
     void Start()
     {
@@ -20,6 +23,20 @@ public class Character : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1)) UseSkill(characterClass.skill1);
         if (Input.GetKeyDown(KeyCode.Alpha2)) UseSkill(characterClass.skill2);
     }
+    public void Heal(float amount)
+    {
+        currentHP += amount;
+        currentHP = Mathf.Min(currentHP, maxHP); // không vượt quá HP tối đa
+        Debug.Log($"{gameObject.name} hồi {amount} HP. HP hiện tại: {currentHP}");
+    }
+    public void RefillAmmo(float ratio)
+    {
+        float refillAmount = maxAmmo * ratio;
+        currentAmmo += refillAmount;
+        currentAmmo = Mathf.Min(currentAmmo, maxAmmo);
+        Debug.Log($"{gameObject.name} được hồi {refillAmount} ammo. Ammo hiện tại: {currentAmmo}");
+    }
+
 
     void UseSkill(SkillData skill)
     {

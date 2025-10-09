@@ -6,6 +6,9 @@ public class Enemy : MonoBehaviour
 
     private Health healthSystem;
     public static int AliveCount;
+    private bool isStunned = false;
+    private float stunTimer = 0f;
+
     void Awake()
     {
         // Lấy HealthSystem gắn trên Enemy
@@ -49,5 +52,33 @@ public class Enemy : MonoBehaviour
             GameManager.Instance.CheckWaveClear();
         }
     }
+    public void ApplyStun(float duration)
+    {
+        isStunned = true;
+        stunTimer = duration;
+        Debug.Log($"{gameObject.name} bị choáng trong {duration} giây");
+    }
+    void Update()
+    {
+        if (isStunned)
+        {
+            stunTimer -= Time.deltaTime;
+            if (stunTimer <= 0f)
+            {
+                isStunned = false;
+                Debug.Log($"{gameObject.name} hết choáng");
+            }
+
+            // Nếu có hệ thống di chuyển hoặc tấn công, bạn có thể chặn tại đây:
+            // return; hoặc skip hành vi
+        }
+
+        if (!isStunned)
+        {
+            // Enemy hành động bình thường (di chuyển, tấn công…)
+        }
+    }
+
+
 
 }
