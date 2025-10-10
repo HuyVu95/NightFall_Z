@@ -44,7 +44,7 @@ public class Gun : MonoBehaviour
         Vector2 direction = (mouseWorldPos - firePos).normalized;
 
         // Tạo đạn
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Collider2D playerCollider = GetComponentInParent<Collider2D>();
         Collider2D bulletCollider = bullet.GetComponent<Collider2D>();
         Physics2D.IgnoreCollision(bulletCollider, playerCollider);

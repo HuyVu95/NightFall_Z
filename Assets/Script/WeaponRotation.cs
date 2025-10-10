@@ -21,8 +21,10 @@ public class WeaponRotation : MonoBehaviour
         weaponPivot.rotation = Quaternion.Euler(0f, 0f, angle);
 
         // ✅ Lật phần hiển thị, không lật pivot
-        bool isBehind = angle > 90f || angle < -90f;
+        bool isBehind = direction.x < 0f;
         //weaponVisual.localScale = new Vector3(1f, isBehind ? -1f : 1f, 1f);
-        weaponVisual.localScale = new Vector3(isBehind ? -1f : 1f, 1f, 1f);
+        weaponVisual.localScale = new Vector3(isBehind ? -1f : 1f, isBehind ? -1f : 1f, 1f);
+       
+
     }
 }

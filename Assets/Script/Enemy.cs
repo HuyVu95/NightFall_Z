@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour
     private Health healthSystem;
     private EnemyAnimator enemyAnimator;
     private Transform target;
+    public int facingDirection = 1;
 
     void Awake()
     {
@@ -52,12 +53,20 @@ public class Enemy : MonoBehaviour
         if (healthSystem.currentHealth <= 0)
         {
             enemyAnimator.PlayDie();
-            StartCoroutine(DelayedDestroy(5f));
+            //StartCoroutine(DelayedDestroy(5f));
+            StartCoroutine(DestroyAfterAnimation());
         }
     }
-    private IEnumerator DelayedDestroy(float delay)
+    //private IEnumerator DelayedDestroy(float delay)
+    //{
+    //    yield return new WaitForSeconds(delay);
+    //    Destroy(gameObject);
+    //}
+    private IEnumerator DestroyAfterAnimation()
     {
-        yield return new WaitForSeconds(delay);
+        Animator anim = GetComponent<Animator>();
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Die"));
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
     }
 
@@ -97,6 +106,9 @@ public class Enemy : MonoBehaviour
             enemyAnimator.SetWalking(false);
             HandleAttack();
         }
+        if (target.position.x < transform.position.x && transform.localScale.x > 0) Flip();
+        else if (target.position.x > transform.position.x && transform.localScale.x < 0) Flip();
+
     }
 
     private void MoveTowardsTarget()
@@ -136,4 +148,10 @@ public class Enemy : MonoBehaviour
             }
         }
     }
+    void Flip()
+    {
+        facingDirection *= -1;
+        transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+    }
+    
 }
