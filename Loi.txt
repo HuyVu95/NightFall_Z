@@ -1,0 +1,2 @@
+Súng + hiệu ứng lửa không lật khi quay về sau
+animation không hoạt động
