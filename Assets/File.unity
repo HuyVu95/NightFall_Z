@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 15180736}
   - component: {fileID: 15180737}
   - component: {fileID: 15180738}
+  - component: {fileID: 15180739}
   m_Layer: 0
   m_Name: Heavy
   m_TagString: Untagged
@@ -228,6 +229,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &15180739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15180735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bbc4429deddc9847a9af97a820e4e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1711102268006981256, guid: 37dd3f6d812f49042a9db1d05d0aca7a, type: 3}
+  firePoint: {fileID: 1637393573}
+  fireRate: 0.3
+  maxAmmo: 10
+  reserveAmmo: 30
+  reloadTime: 1.5
+  currentAmmo: 0
+  isReloading: 0
 --- !u!1 &21321075
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +474,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 927013321}
   - {fileID: 1894144626}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -483,12 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38723eedc820cb442a5203c48f888994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guns:
-  - {fileID: 464014527}
-  - {fileID: 400206810}
-  - {fileID: 15180737}
-  - {fileID: 1117385077}
-  currentGunIndex: 1
+  weaponManager: {fileID: 927013322}
   shootEffectPrefab: {fileID: 5618713894686214813, guid: 451af86532ddd0048b2980949615d837, type: 3}
   ammoText: {fileID: 634528907}
   gunNameText: {fileID: 0}
@@ -788,6 +805,7 @@ GameObject:
   - component: {fileID: 464014526}
   - component: {fileID: 464014527}
   - component: {fileID: 464014528}
+  - component: {fileID: 464014529}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -883,6 +901,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &464014529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464014525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bbc4429deddc9847a9af97a820e4e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 4124445652936644111, guid: 0deccbaa23d30c8449efdf3fc8d79585, type: 3}
+  firePoint: {fileID: 358594040}
+  fireRate: 0.5
+  maxAmmo: 10
+  reserveAmmo: 30
+  reloadTime: 1.5
+  currentAmmo: 0
+  isReloading: 0
 --- !u!114 &567874514 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8127324789841606990, guid: 1170bd7604124244b996b21236720407, type: 3}
@@ -996,7 +1034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 375.8, y: 135.4}
+  m_AnchoredPosition: {x: 375.8, y: 122.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634528907
@@ -1046,8 +1084,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1082,7 +1120,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -48.88922, w: 0}
+  m_margin: {x: -59.816223, y: 0, z: -48.88922, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1122,7 +1160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 259247632003315795, guid: 1170bd7604124244b996b21236720407, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 138.5
+      value: 130.6
       objectReference: {fileID: 0}
     - target: {fileID: 511709003253102645, guid: 1170bd7604124244b996b21236720407, type: 3}
       propertyPath: m_LocalScale.x
@@ -1142,7 +1180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 511709003253102645, guid: 1170bd7604124244b996b21236720407, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 138.38998
+      value: 130.48999
       objectReference: {fileID: 0}
     - target: {fileID: 788400499950965241, guid: 1170bd7604124244b996b21236720407, type: 3}
       propertyPath: m_Name
@@ -1194,7 +1232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6775655824011022270, guid: 1170bd7604124244b996b21236720407, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 138.38998
+      value: 130.48999
       objectReference: {fileID: 0}
     - target: {fileID: 8990089957004270592, guid: 1170bd7604124244b996b21236720407, type: 3}
       propertyPath: m_Pivot.x
@@ -1362,6 +1400,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &927013320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 927013321}
+  - component: {fileID: 927013322}
+  m_Layer: 0
+  m_Name: WeaponManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &927013321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927013320}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 99328302}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &927013322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927013320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: badf5438eded3b941995925a12d5b968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 464014527}
+  - {fileID: 400206810}
+  - {fileID: 15180737}
+  - {fileID: 1117385077}
+  currentGunIndex: 0
+  weaponHolder: {fileID: 0}
 --- !u!1 &1013374418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,7 +1756,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 135, y: 136.2}
+  m_AnchoredPosition: {x: 135, y: 122.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1662123450
@@ -1717,8 +1806,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

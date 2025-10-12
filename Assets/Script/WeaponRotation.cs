@@ -22,7 +22,6 @@ public class WeaponRotation : MonoBehaviour
 
         // ✅ Lật phần hiển thị, không lật pivot
         bool isBehind = direction.x < 0f;
-        //weaponVisual.localScale = new Vector3(1f, isBehind ? -1f : 1f, 1f);
         weaponVisual.localScale = new Vector3(isBehind ? -1f : 1f, isBehind ? -1f : 1f, 1f);
        
 

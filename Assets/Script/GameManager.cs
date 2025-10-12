@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
                 countdownText.text = "San sang: " + Mathf.Ceil(timer) + "s";
                 break;
             case State.Wave:
-                countdownText.text = "Wave " + currentWave + " dang dien ra!";
+                countdownText.text = "Wave " + currentWave + " !";
                 break;
             case State.PostWave:
                 countdownText.text = "Wave tiep theo: " + Mathf.Ceil(timer) + "s";
