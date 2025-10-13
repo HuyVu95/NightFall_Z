@@ -130,8 +130,8 @@ TextureImporter:
         y: 265
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,8 +151,8 @@ TextureImporter:
         y: 265
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,8 +172,8 @@ TextureImporter:
         y: 265
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_13
+      name: rom1
       rect:
         serializedVersion: 2
         x: 348
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_14
+      name: rom2
       rect:
         serializedVersion: 2
         x: 357
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_15
+      name: rom3
       rect:
         serializedVersion: 2
         x: 374
@@ -487,8 +487,8 @@ TextureImporter:
         y: 265
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -823,8 +823,8 @@ TextureImporter:
         y: 265
         width: 16
         height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -844,8 +844,8 @@ TextureImporter:
         y: 265
         width: 16
         height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -865,8 +865,8 @@ TextureImporter:
         y: 265
         width: 16
         height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -886,8 +886,8 @@ TextureImporter:
         y: 265
         width: 16
         height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -907,8 +907,8 @@ TextureImporter:
         y: 265
         width: 16
         height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1215,7 +1215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_53
+      name: rom6
       rect:
         serializedVersion: 2
         x: 348
@@ -1236,7 +1236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_54
+      name: rom5
       rect:
         serializedVersion: 2
         x: 357
@@ -1257,7 +1257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_55
+      name: rom4
       rect:
         serializedVersion: 2
         x: 374
@@ -1966,27 +1966,6 @@ TextureImporter:
       bones: []
       spriteID: d42acc93131ad1b4ba582932ee0b4f5e
       internalID: -478564135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_89
-      rect:
-        serializedVersion: 2
-        x: 374
-        y: 227
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 499b378b831f7ca419e0cef76dc6baf6
-      internalID: 479233071
       vertices: []
       indices: 
       edges: []
@@ -3196,8 +3175,8 @@ TextureImporter:
         y: 196
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3217,8 +3196,8 @@ TextureImporter:
         y: 196
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3238,8 +3217,8 @@ TextureImporter:
         y: 196
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3280,8 +3259,8 @@ TextureImporter:
         y: 196
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3301,8 +3280,8 @@ TextureImporter:
         y: 196
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4372,8 +4351,8 @@ TextureImporter:
         y: 177
         width: 13
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4393,8 +4372,8 @@ TextureImporter:
         y: 177
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4414,8 +4393,8 @@ TextureImporter:
         y: 177
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4435,8 +4414,8 @@ TextureImporter:
         y: 177
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4456,8 +4435,8 @@ TextureImporter:
         y: 177
         width: 13
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5485,8 +5464,8 @@ TextureImporter:
         y: 151
         width: 16
         height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5506,8 +5485,8 @@ TextureImporter:
         y: 151
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5527,8 +5506,8 @@ TextureImporter:
         y: 151
         width: 16
         height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5653,8 +5632,8 @@ TextureImporter:
         y: 132
         width: 16
         height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6157,8 +6136,8 @@ TextureImporter:
         y: 132
         width: 16
         height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6178,8 +6157,8 @@ TextureImporter:
         y: 132
         width: 16
         height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6472,8 +6451,8 @@ TextureImporter:
         y: 120
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7207,8 +7186,8 @@ TextureImporter:
         y: 101
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7228,8 +7207,8 @@ TextureImporter:
         y: 101
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7249,8 +7228,8 @@ TextureImporter:
         y: 101
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7312,8 +7291,8 @@ TextureImporter:
         y: 101
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8061,7 +8040,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_379
+      name: fent_a
       rect:
         serializedVersion: 2
         x: 357
@@ -8082,7 +8061,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_380
+      name: fent_a2
       rect:
         serializedVersion: 2
         x: 391
@@ -8859,15 +8838,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_417
+      name: car_f2
       rect:
         serializedVersion: 2
         x: 340
         y: 56
         width: 16
         height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8908,8 +8887,8 @@ TextureImporter:
         y: 63
         width: 13
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8929,8 +8908,8 @@ TextureImporter:
         y: 63
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8950,8 +8929,8 @@ TextureImporter:
         y: 63
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8971,8 +8950,8 @@ TextureImporter:
         y: 63
         width: 16
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8992,8 +8971,8 @@ TextureImporter:
         y: 63
         width: 13
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -9132,15 +9111,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_430
+      name: car_f1
       rect:
         serializedVersion: 2
         x: 326
         y: 56
         width: 13
         height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -9153,7 +9132,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_431
+      name: fent_a7
       rect:
         serializedVersion: 2
         x: 374
@@ -9552,7 +9531,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_451
+      name: car_f4
       rect:
         serializedVersion: 2
         x: 324
@@ -9573,7 +9552,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_452
+      name: car_f3
       rect:
         serializedVersion: 2
         x: 340
@@ -9594,7 +9573,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_453
+      name: fent_a5
       rect:
         serializedVersion: 2
         x: 357
@@ -9615,7 +9594,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie Apocalypse Tileset Reference_454
+      name: fent_a6
       rect:
         serializedVersion: 2
         x: 391
@@ -10924,8 +10903,8 @@ TextureImporter:
         y: 132
         width: 16
         height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10946,7 +10925,7 @@ TextureImporter:
         width: 94
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10967,7 +10946,7 @@ TextureImporter:
         width: 33
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10988,7 +10967,7 @@ TextureImporter:
         width: 2
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10996,6 +10975,48 @@ TextureImporter:
       bones: []
       spriteID: 3ce98e7634bb1014cb7f0bbb4dfebb74
       internalID: -141613668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fent_a3
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 56
+        width: 3
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621d6b8808164eb4e99b69ee05577c33
+      internalID: -1685103560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fent_a4
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 56
+        width: 3
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a813003778b22f542a073c3c180f5d89
+      internalID: -429748602
       vertices: []
       indices: 
       edges: []
@@ -11079,7 +11100,6 @@ TextureImporter:
       Zombie Apocalypse Tileset Reference_122: 397000047
       Zombie Apocalypse Tileset Reference_125: 60631685
       Zombie Apocalypse Tileset Reference_126: 1894067689
-      Zombie Apocalypse Tileset Reference_13: 591205033
       Zombie Apocalypse Tileset Reference_132: 79915315
       Zombie Apocalypse Tileset Reference_133: 1539082657
       Zombie Apocalypse Tileset Reference_134: 1128774928
@@ -11088,7 +11108,6 @@ TextureImporter:
       Zombie Apocalypse Tileset Reference_137: 982228744
       Zombie Apocalypse Tileset Reference_138: 508093642
       Zombie Apocalypse Tileset Reference_139: 586619446
-      Zombie Apocalypse Tileset Reference_14: -1797275774
       Zombie Apocalypse Tileset Reference_140: -1927675606
       Zombie Apocalypse Tileset Reference_141: -863039407
       Zombie Apocalypse Tileset Reference_142: -628521914
@@ -11096,7 +11115,6 @@ TextureImporter:
       Zombie Apocalypse Tileset Reference_144: 1658333517
       Zombie Apocalypse Tileset Reference_145: -24011341
       Zombie Apocalypse Tileset Reference_146: 1508981276
-      Zombie Apocalypse Tileset Reference_15: 2103424527
       Zombie Apocalypse Tileset Reference_150: 826022796
       Zombie Apocalypse Tileset Reference_151: 63179129
       Zombie Apocalypse Tileset Reference_152: 1598361954
@@ -11242,8 +11260,6 @@ TextureImporter:
       Zombie Apocalypse Tileset Reference_365: 501238031
       Zombie Apocalypse Tileset Reference_366: -1073887902
       Zombie Apocalypse Tileset Reference_377: -1682186690
-      Zombie Apocalypse Tileset Reference_379: -813001268
-      Zombie Apocalypse Tileset Reference_380: 5213853
       Zombie Apocalypse Tileset Reference_386: -72012867
       Zombie Apocalypse Tileset Reference_387: 1674816749
       Zombie Apocalypse Tileset Reference_388: -1496434603
@@ -11266,10 +11282,7 @@ TextureImporter:
       Zombie Apocalypse Tileset Reference_414: -275842475
       Zombie Apocalypse Tileset Reference_415: 996196650
       Zombie Apocalypse Tileset Reference_416: -2145556333
-      Zombie Apocalypse Tileset Reference_417: 1549814609
       Zombie Apocalypse Tileset Reference_428: -1243256892
-      Zombie Apocalypse Tileset Reference_430: -247147494
-      Zombie Apocalypse Tileset Reference_431: 535111976
       Zombie Apocalypse Tileset Reference_432: -1533823930
       Zombie Apocalypse Tileset Reference_433: 1973077703
       Zombie Apocalypse Tileset Reference_434: -1928565723
@@ -11277,10 +11290,6 @@ TextureImporter:
       Zombie Apocalypse Tileset Reference_448: 2065710926
       Zombie Apocalypse Tileset Reference_449: -1556399724
       Zombie Apocalypse Tileset Reference_450: 1105373844
-      Zombie Apocalypse Tileset Reference_451: -781849669
-      Zombie Apocalypse Tileset Reference_452: 437176934
-      Zombie Apocalypse Tileset Reference_453: -182578190
-      Zombie Apocalypse Tileset Reference_454: 462348009
       Zombie Apocalypse Tileset Reference_459: 1901015026
       Zombie Apocalypse Tileset Reference_460: -178168196
       Zombie Apocalypse Tileset Reference_461: -527960890
@@ -11334,9 +11343,6 @@ TextureImporter:
       Zombie Apocalypse Tileset Reference_509: -1729273557
       Zombie Apocalypse Tileset Reference_511: -1210360962
       Zombie Apocalypse Tileset Reference_512: 1436057275
-      Zombie Apocalypse Tileset Reference_53: -886696075
-      Zombie Apocalypse Tileset Reference_54: 1156107833
-      Zombie Apocalypse Tileset Reference_55: -210263222
       Zombie Apocalypse Tileset Reference_61: -1688361885
       Zombie Apocalypse Tileset Reference_62: 1295399248
       Zombie Apocalypse Tileset Reference_63: -74174332
@@ -11372,8 +11378,19 @@ TextureImporter:
       car_d1: 1207492440
       car_d2: -1756586394
       car_d3: -29221846
+      car_f1: -247147494
+      car_f2: 1549814609
+      car_f3: 437176934
+      car_f4: -781849669
       deadbody 3: 1239598118
       deadbody 4: -163637873
+      fent_a: -813001268
+      fent_a2: 5213853
+      fent_a3: -1920577938
+      fent_a4: -429748602
+      fent_a5: -182578190
+      fent_a6: 462348009
+      fent_a7: 535111976
       fent_b1: -321749484
       fent_b2: 1216304299
       fent_b3: 1781495113
@@ -11506,6 +11523,12 @@ TextureImporter:
       road7: 762940571
       road8: -1042561807
       road9: -920639326
+      rom1: 591205033
+      rom2: -1797275774
+      rom3: 2103424527
+      rom4: -210263222
+      rom5: 1156107833
+      rom6: -886696075
       shop2: 1366729046
       sign1: -1296809514
       sign2: -898973349
