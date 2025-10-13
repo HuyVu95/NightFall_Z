@@ -172,7 +172,7 @@ public class P_shoot : MonoBehaviour
         if (currentGun == null) return;
 
         if (ammoText != null)
-            ammoText.text = $"{currentGun.currentAmmo}/{currentGun.maxAmmo} ({currentGun.reserveAmmo})";
+            ammoText.text = $"{currentGun.name}: {currentGun.currentAmmo}/{currentGun.maxAmmo}";
 
         if (gunNameText != null)
             gunNameText.text = currentGun.name;

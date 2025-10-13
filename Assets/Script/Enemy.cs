@@ -67,7 +67,7 @@ public class Enemy : MonoBehaviour
         Animator anim = GetComponent<Animator>();
         yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Die"));
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
 

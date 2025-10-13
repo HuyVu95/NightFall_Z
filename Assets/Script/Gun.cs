@@ -118,7 +118,7 @@ public class Gun : MonoBehaviour
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = ((Vector2)mouseWorldPos - (Vector2)firePoint.position).normalized;
 
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Collider2D playerCollider = GetComponentInParent<Collider2D>();
         Collider2D bulletCollider = bullet.GetComponent<Collider2D>();
         Physics2D.IgnoreCollision(bulletCollider, playerCollider);
