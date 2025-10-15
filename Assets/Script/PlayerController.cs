@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     public float speed = 3f;
     private Vector2 moveInput;
     public int facingDirection = 1;
+    public Animator anim;
+    public bool isDead = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +20,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(isDead) return;
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
         moveInput.Normalize();
-
+        
         FlipTowardsMouse();
+        if (anim != null)
+        {
+            anim.SetFloat("Speed", moveInput.magnitude);
+        }
+
     }
     void FlipTowardsMouse()
     {
@@ -44,6 +53,22 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isDead) return;
+
         rb.velocity = moveInput * speed;
+    }
+
+    public void Die()
+    {
+        isDead = true;
+        rb.velocity = Vector2.zero;
+
+        if (anim != null)
+        {
+            anim.SetBool("Dead", true);
+            anim.SetBool("isWalking", false);
+        }
+        Debug.Log("💀 Player đã chết");
+
     }
 }
