@@ -20,8 +20,8 @@ public class Character : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) UseSkill(characterClass.skill1);
-        if (Input.GetKeyDown(KeyCode.Alpha2)) UseSkill(characterClass.skill2);
+        if (Input.GetKeyDown(KeyCode.Q)) UseSkill(characterClass.skill1);
+        if (Input.GetKeyDown(KeyCode.E)) UseSkill(characterClass.skill2);
     }
     public void Heal(float amount)
     {

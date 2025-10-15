@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,7 +29,11 @@ public class PlayerController : MonoBehaviour
         FlipTowardsMouse();
         if (anim != null)
         {
-            anim.SetFloat("Speed", moveInput.magnitude);
+            
+            bool isMoving = moveInput.magnitude > 0; // kiểm tra có đang di chuyển không
+            bool isIdleNow = moveInput.magnitude == 0;
+            anim.SetBool("isWalking", isMoving);
+            anim.SetBool("isIdle", isIdleNow);
         }
 
     }
@@ -65,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
         if (anim != null)
         {
-            anim.SetBool("Dead", true);
+            anim.SetBool("isDead", true);
             anim.SetBool("isWalking", false);
         }
         Debug.Log("💀 Player đã chết");

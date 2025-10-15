@@ -10,11 +10,12 @@ TagManager:
   - Bullet_Enemy
   - Obstacle
   - Zombie
+  - vatCan
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - vatCan
   - Water
   - UI
   - 

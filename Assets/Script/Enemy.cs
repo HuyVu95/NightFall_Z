@@ -21,6 +21,14 @@ public class Enemy : MonoBehaviour
     private Transform target;
     public int facingDirection = 1;
 
+    [Header("Raycast Settings")]
+    public float detectDistance = 1.5f;
+    public LayerMask obstacleMask;
+    private Vector2 avoidDirection = Vector2.zero;
+    private float avoidTime = 0f;
+    public float zombieSpeed = 2f;
+
+
     void Awake()
     {
         healthSystem = GetComponent<Health>();
@@ -62,16 +70,16 @@ public class Enemy : MonoBehaviour
     //    yield return new WaitForSeconds(delay);
     //    Destroy(gameObject);
     //}
-    private IEnumerator DestroyAfterAnimation()
-    {
-        Animator anim = GetComponent<Animator>();
-        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Die"));
-        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
-        Destroy(gameObject);
-    }
+private IEnumerator DestroyAfterAnimation()
+{
+    Animator anim = GetComponent<Animator>();
+    yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Die"));
+    yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+    Destroy(gameObject);
+}
 
 
-    public void ApplyStun(float duration)
+public void ApplyStun(float duration)
     {
         isStunned = true;
         stunTimer = duration;
@@ -113,8 +121,31 @@ public class Enemy : MonoBehaviour
 
     private void MoveTowardsTarget()
     {
-        Vector2 direction = (target.position - transform.position).normalized;
-        transform.position += (Vector3)(direction * Time.deltaTime);
+        Vector2 directionToPlayer = (target.position - transform.position).normalized;
+
+        // Nếu đang né
+        if (avoidTime > 0)
+        {
+            transform.position += (Vector3)(avoidDirection * zombieSpeed * Time.deltaTime);
+            avoidTime -= Time.deltaTime;
+            return;
+        }
+
+        // Bắn ray kiểm tra vật cản
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, directionToPlayer, detectDistance, obstacleMask);
+        Debug.DrawRay(transform.position, directionToPlayer * detectDistance, Color.red);
+
+        if (hit.collider != null)
+        {
+            float randomAngle = Random.Range(-90f, 90f);
+            avoidDirection = Quaternion.Euler(0, 0, randomAngle) * directionToPlayer;
+            avoidTime = 0.5f;
+            Debug.Log($"{gameObject.name} gặp vật cản, né sang hướng khác!");
+        }
+        else
+        {
+            transform.position += (Vector3)(directionToPlayer * zombieSpeed * Time.deltaTime);
+        }
     }
 
     private void HandleAttack()

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5040041120791392736}
   - component: {fileID: 5316479751421684069}
   - component: {fileID: 2077859552925406922}
-  - component: {fileID: 7394217412503570628}
   - component: {fileID: 6180017599199410583}
   - component: {fileID: 1060856173592377122}
   - component: {fileID: 6870074351288315253}
@@ -120,6 +119,12 @@ MonoBehaviour:
   damage: 10
   attackRange: 1.5
   attackCooldown: 1.5
+  facingDirection: 1
+  detectDistance: 1.5
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 8
+  zombieSpeed: 2
 --- !u!61 &5316479751421684069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -192,21 +197,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7394217412503570628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2241377185999803055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 715ebfd686c4e294390b7abf12b970e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  attackRange: 1.5
-  attackCooldown: 1.5
 --- !u!114 &6180017599199410583
 MonoBehaviour:
   m_ObjectHideFlags: 0

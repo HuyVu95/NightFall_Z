@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
 
     public enum Type { Player, Enemy }
     public Type characterType;
+    
 
     void Start()
     {
@@ -32,9 +33,13 @@ public class Health : MonoBehaviour
             if (characterType == Type.Player)
                 Debug.Log("Player chết");
             else
+            {
                 Destroy(gameObject);
+            }
+                
         }
     }
+
 
     void UpdateUI()
     {
