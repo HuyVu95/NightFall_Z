@@ -34,7 +34,8 @@ public class Health : MonoBehaviour
                 Debug.Log("Player chết");
             else
             {
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                Debug.Log($"{gameObject.name} đã chết (Health.cs báo).");
             }
                 
         }

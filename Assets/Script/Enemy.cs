@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
     private Vector2 avoidDirection = Vector2.zero;
     private float avoidTime = 0f;
     public float zombieSpeed = 2f;
+    private bool isDead = false;
 
 
     void Awake()
@@ -55,14 +56,17 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float dmg)
     {
+        if (isDead) return;
         healthSystem.TakeDamage(dmg);
         enemyAnimator.PlayHit();
 
         if (healthSystem.currentHealth <= 0)
         {
+            isDead = true;
             enemyAnimator.PlayDie();
             //StartCoroutine(DelayedDestroy(5f));
             StartCoroutine(DestroyAfterAnimation());
+            
         }
     }
     //private IEnumerator DelayedDestroy(float delay)
@@ -70,16 +74,16 @@ public class Enemy : MonoBehaviour
     //    yield return new WaitForSeconds(delay);
     //    Destroy(gameObject);
     //}
-private IEnumerator DestroyAfterAnimation()
-{
-    Animator anim = GetComponent<Animator>();
-    yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Die"));
-    yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
-    Destroy(gameObject);
-}
+    private IEnumerator DestroyAfterAnimation()
+    {
+        Animator anim = GetComponent<Animator>();
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("isDead"));
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+        Destroy(gameObject);
+    }
 
 
-public void ApplyStun(float duration)
+    public void ApplyStun(float duration)
     {
         isStunned = true;
         stunTimer = duration;
