@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
 
     public enum Type { Player, Enemy }
     public Type characterType;
-    
+    public bool IsDead => currentHealth <= 0;
 
     void Start()
     {
@@ -24,9 +24,11 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (IsDead) return;
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         UpdateUI();
+
 
         if (currentHealth <= 0)
         {
@@ -35,7 +37,9 @@ public class Health : MonoBehaviour
             else
             {
                 //Destroy(gameObject);
-                Debug.Log($"{gameObject.name} đã chết (Health.cs báo).");
+                Debug.Log($"{gameObject.name} máu = 0 xử lý animation die.");
+                SendMessage("OnDeath", SendMessageOptions.DontRequireReceiver);
+
             }
                 
         }
@@ -50,5 +54,5 @@ public class Health : MonoBehaviour
         if (hpText != null)
             hpText.text = Mathf.Ceil(currentHealth) + "/" + Mathf.Ceil(maxHealth);
     }
-
+    
 }

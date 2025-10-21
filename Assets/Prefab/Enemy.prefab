@@ -125,6 +125,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   zombieSpeed: 2
+  dropItems:
+  - {fileID: 9033077042272225657, guid: caae98937c32a5d498177b8d6496a2cc, type: 3}
+  - {fileID: 6378440879948450850, guid: 861a51905d3946340853b4d02624d64b, type: 3}
 --- !u!61 &5316479751421684069
 BoxCollider2D:
   m_ObjectHideFlags: 0
